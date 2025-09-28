@@ -5,6 +5,8 @@ function updateNavbar(username, role) {
     const adminDashboard = document.getElementById('admin-dashboard');
     const userDashboard = document.getElementById('user-dashboard');
 
+    if (!signinLink || !profileLink || !usernameDisplay) return;
+
     if (username) {
         signinLink.classList.add('hidden');
         signinLink.classList.remove('visible');

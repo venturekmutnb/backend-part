@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
        
         if ($password == $dbpassword) {
-            $_SESSION['user_id'] = $acc_id;
+            $_SESSION['acc_id'] = $acc_id;
             $_SESSION['username'] = $username;
             $_SESSION['role'] = $role;
             echo "สำเร็จแล้ว";
